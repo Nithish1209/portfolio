@@ -1,0 +1,525 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+a{
+    text-decoration: none;
+   
+  }
+  .title{
+    min-height: 100vh;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #menu
+  {
+    position: fixed;
+    z-index: 1000;
+    left : 0;
+    top:0;
+    width: 100vw;
+    height: auto;
+
+  }
+  #menu .menu{
+    min-height: 8vh;
+    background-color: rgb(200, 201, 197);
+background-image: url(image/glob.jpeg);
+  }
+  #menu .bar{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    padding: 0 10px;
+  }
+.logo {
+  color: antiquewhite;
+  font-size: large;
+}
+.abcd{
+  background-color: black;
+}
+.logo:hover{
+  border-radius: 10%;
+  border: 2px;
+}
+  .HA{
+  font-size: 20px;
+  text-align: right;
+ }
+#menu .navlist ul{
+
+  list-style-type: none;
+  position: absolute;
+  background-color: black;
+  width : 100vw;
+  height  : 100vh;
+  left: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  overflow-x: hidden;
+  transition: .6s ease left;
+
+}
+#menu .navlist ul.active{
+  left: 20%;
+
+
+}
+.ab{
+  color: orangered;
+  
+}
+
+
+  .HA {
+    color: red;
+  }
+
+#menu .navlist ul a {
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: .2rem;
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  display: block;
+
+}
+
+
+#menu .hb{
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+  border: 3px solid white;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  cursor: pointer;
+  transform: scale(.9);
+  margin-right: 20px;
+
+}
+#menu .hb .b {
+  height: 2px;
+  width: 30px;
+  position: relative;
+  background-color: white;
+  z-index: -1;
+
+}
+#menu .hb .b::after,
+#menu .hb .b::before {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	background-color: white;
+	transition: 0.3s ease;
+	transition-property: top, bottom;
+}
+#menu .hb .b::after {
+	top: 8px;
+}
+#menu .hb .b::before {
+	bottom: 8px;
+}
+
+#menu .hb.active .bar::before {
+	bottom: 0;
+}
+#menu .hb.active .bar::after {
+	top: 0;
+}
+  ul{
+    list-style-type: none;
+align-items: center;
+  }
+  .about {
+    background-color: darkslategrey;
+
+    background-size:cover;
+    position: relative;
+    background-position: top center;
+  
+
+  }
+  .ab{
+    display: flex;
+  }
+  .imgs {
+    display: flex;
+    gap: 50px;
+    
+    
+    }
+  #project {
+    background-image: url(./image/crack.webp);
+
+    background-size:cover;
+    position: relative;
+    background-position: top center;
+
+  }
+    
+
+h1{
+  color: aliceblue;
+}
+
+  .contact {
+    background-image: url(image/pr3.jpg);
+    background-size:cover;
+    position: relative;
+    background-position: top center;
+
+    
+  }
+  
+  #home{
+
+    background-image: url(./image/nimmi.jpeg);
+
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: -1;
+  }
+  #home::after{
+    content: " ";
+    position: absolute;
+    left:0;
+    top :0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+  }
+  #home h1{
+    display: block;
+    width: fit-content;
+    position:relative;
+    color: aliceblue;
+  
+  }
+
+  #home h2 {
+    color: rgb(235, 235, 37);
+
+  }
+  #home .button{
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: transparent;
+    color: rgb(223, 216, 219);
+    border: 2px solid crimson;
+    margin: 30px;
+    letter-spacing: .1rem;
+    transition: .3s ease;
+    transition-property: background-color,color;
+
+  }
+  #home .home{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flexy-start;
+  }
+  
+  
+  .about{
+    background-color: black;
+    color: aliceblue;
+  }
+  .abcd{
+       display: flex;
+
+  }
+  .heading {
+    font-size: 25px;
+     
+  }
+  .LAN{
+    font-size: large;
+  }
+  .im:hover{
+    cursor: pointer;
+    background-size: cover;
+    
+  }
+  #about.about{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding :100px 0;
+
+
+  }
+  
+  #project.project{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+  }
+  #conatact.contact{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+  }
+
+@media only screen and (min-width:750px)
+{
+    .button{
+        font-size: 2.5rem;
+        padding: 20px 60px;
+    }
+    h1.title{
+        font-size: 7rem;
+    }
+
+    #home h1 {
+        font-size: 7rem;
+    }
+ 
+
+}
+@media only screen  and (min-width: 1000px) {
+#menu .hb{
+  display: none;
+
+}
+ #menu .navlist ul{
+  position: initial;
+  display: block;
+  height: auto;
+  width: fit-content;
+  background-color: transparent;
+ }
+
+ #menu .navlist ul li {
+  display: inline-block;
+ }
+ #menu .navlist ul li a {
+   font-size: 1.8rem;
+ }
+ #menu .navlist ul a:after {
+  display: none;
+
+ }
+
+}
+
+li:hover{
+  background-color: rgb(3, 47, 104);
+  border-radius:  8px;
+}
+
+#contact {
+  background-image: url(.\image\glob.jpeg);
+  position: relative;
+  text-align: center;
+}
+   .c {
+       font-size: 30px;
+       color: rgb(255, 170, 59);
+       font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+      
+   }
+
+   .det{
+    font-size: 20px;
+    color: yellow;
+   }
+
+  
+  #about .ab {
+    width: 250px;
+    height: 360px;
+  }
+  #about .heading {
+    width: 100%;
+  }
+
+  .p:hover{
+    transition:initial;
+    cursor: pointer;
+  }
+
+  .pd:hover{
+    transition:initial;
+    cursor: pointer;
+  }
+ .cse{
+     font-size: large;
+     padding: 10px;
+     background-color: transparent;
+     color: aliceblue;
+     border-color: blue;
+     font-family:Arial, Helvetica, sans-serif;
+ }
+ .cse:hover{
+  border-radius: rgb(22, 6, 116);
+  border: 10px;
+  background-color: rgb(21, 35, 233);
+  border-color: rgb(226, 230, 226);
+  cursor: pointer;
+ }
+.LAN{
+  color: rgb(236, 16, 16);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:large;
+text-align: center;
+}
+.age{
+  font-size: large;
+  color: rgb(230, 255, 10);
+  text-align: left;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.for_m{
+   background-color: rgb(5, 24, 36);
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+ .for_m:hover{
+     background-color: lightsteelblue;
+ }
+ .age:hover{
+
+    color: rgb(235, 26, 26);
+
+ }
+ .VISITOR{
+  font-size: large;
+  color: aliceblue;
+  text-align: center;
+ }
+ .developed{
+   text-align: right;
+   color: aliceblue;
+
+ }
+ .im:hover{
+  background-color: #f1f3e6;
+  border-radius: 10px;
+ }
+ .pdsin{
+  background-image: url(image/ab1.jpeg);
+  width: 30%;
+  
+ }
+ 
+ 
+ #male{
+  color: rgb(25, 230, 76);
+ }
+ #male:hover
+ {
+  color: #f1f3e6;
+ }
+ .ba{
+   border:rgb(250, 250, 250);
+   font-size: 23px;
+   background-color: transparent;
+   color:aliceblue;
+   padding: 5px;
+   border: 30px;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   letter-spacing: 3px;
+
+ }
+ .ba:hover{
+  color: rgb(38, 15, 241);
+  cursor: pointer;
+ }
+ .title{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+ }
+ .aboutfont{
+ text-align: center;
+ }
+ .abouthead{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(223, 233, 236);
+  background-color: rgb(211, 0, 42);
+ }
+ .say {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+ }
+ .ss{
+  background-color:rgb(18, 105, 30);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+}
+.Nstyle{
+  color: red;
+  letter-spacing: 3px;
+  font-family:cursive;
+  font-size: 20px;
+}
+.PTS{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+  color: rgb(250, 215, 218);
+
+}
+.PTS div{
+  background: #0aa0b4;
+  padding: 40px;
+  font-size:13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s,transform 0.5s;
+  color: #262626;
+  font-family: cursive;
+  width: 350px;
+  text-align: center;
+}
+.PTS div:hover{
+  background: #ff004f;
+  transform: translateY(-10px);
+  cursor: pointer;
+  color: cornsilk;
+
+}
+#color{
+  padding: 5px;
+}
+.LAN i:hover{
+
+color: #ff004f;
+letter-spacing: 3px;
+cursor: pointer;
+
+}
+.c b:hover{
+  letter-spacing: 3px;
+  color:rgb(235, 26, 26)
+}
